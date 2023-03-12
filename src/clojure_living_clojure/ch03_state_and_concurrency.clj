@@ -73,6 +73,7 @@
 (def who-agent (agent :caterpillar))
 @who-agent
 ;; => :caterpillar
+#_{:clj-kondo/ignore [:clojure-lsp/unused-public-var]}
 (defn change-agent [state]
   (case state
     :caterpillar :chrysalis
